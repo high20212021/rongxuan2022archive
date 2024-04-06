@@ -16,6 +16,16 @@
 <p id="hitokoto">
   <a href="#" id="hitokoto_text">:D 获取中...</a>
 </p>
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.querySelector('#hitokoto_text')
+      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
+</script>
 	  
         
 </p><a href="http://github.com/Rongxuan2022/rongxuan2022.github.io">如果你点了star关闭窗口目录4会到你家超市你</p>
