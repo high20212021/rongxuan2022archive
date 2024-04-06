@@ -7,21 +7,7 @@
 </head>
 <body>
 </h1>Welcome! (｡•̀ᴗ-)✧</h1>
-Integer hitsCount = 
-      (Integer)application.getAttribute("hitCounter");
-    if( hitsCount ==null || hitsCount == 0 ){
-       /* 第一次访问 */
-       out.println("");
-       hitsCount = 1;
-    }else{
-       /* 返回访问值 */
-       out.println("");
-       hitsCount += 1;
-    }
-    application.setAttribute("hitCounter", hitsCount);
-%>
 
-<p>网站已被访问: <%= hitsCount%>次</p>
 
 	  </p><marquee scrollamount="8" direction="left" align="Middle" style="font-weight: bold;line-height: 20px;font-size: 20px;color: #FF0000;">gbc 一条gbc 你的感觉真的很奇妙（很奇妙~） 飘呀飘 摇啊摇 你的感觉神魂颠倒
                 </marquee></p>
