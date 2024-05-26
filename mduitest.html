@@ -13,6 +13,25 @@
   </head>
   <body>
     <mdui-button>我是一个按钮</mdui-button>
+
+
 <mdui-card clickable style="width: 200px;height: 124px">我是一个能点的卡片</mdui-card>
+
+
+<mdui-dialog class="example-dialog">
+  Dialog
+  <mdui-button>关闭</mdui-button>
+</mdui-dialog>
+
+<mdui-button>打开对话框</mdui-button>
+
+<script>
+  const dialog = document.querySelector(".example-dialog");
+  const openButton = dialog.nextElementSibling;
+  const closeButton = dialog.querySelector("mdui-button");
+
+  openButton.addEventListener("click", () => dialog.open = true);
+  closeButton.addEventListener("click", () => dialog.open = false);
+</script>
   </body>
 </html>
