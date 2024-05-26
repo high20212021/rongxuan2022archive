@@ -12,15 +12,8 @@
 
 
     <title>毕业赠言</title>
-<script>
-  const dialog = document.querySelector(".example-overlay");
-  const openButton = dialog.nextElementSibling;
-
-  openButton.addEventListener("click", () => dialog.open = true);
-</script>
-<mdui-button>Click To Show</mdui-button>
 <mdui-dialog
-  headline="送给大家"
+  headline="For Everyone "
   description="六年的时光，如流水般流去。我们很快就要分离，来到不同的学校，认识新的同学、学习新的科目；来到不同的班级，认识不同的朋友。在这里，我祝大家学习顺利，一定要记得六（2）班，也要记得我。
 Good Bye!
 Good luck for the future.
@@ -28,3 +21,12 @@ Good luck for the future.
   close-on-overlay-click
   class="example-headline"
 ></mdui-dialog>
+
+<mdui-button>Click To Show</mdui-button>
+
+<script>
+  const dialog = document.querySelector(".example-headline");
+  const openButton = dialog.nextElementSibling;
+
+  openButton.addEventListener("click", () => dialog.open = true);
+</script>
