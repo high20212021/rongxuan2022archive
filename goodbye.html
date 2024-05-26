@@ -14,7 +14,7 @@
     <title>毕业赠言</title>
 <mdui-dialog
   headline="For my classmates||写给我的同学们"
-  description="六年的时光，如流水般流去。我们很快就要分离，来到不同的学校，认识新的同学、学习新的科目；来到不同的班级，认识不同的朋友。在这里，我祝大家学习顺利，一定要记得六（2）班，也要记得我。"
+  description="六年的时光，如流水般流去。我们很快就要分离，来到不同的学校，认识新的同学、学习新的科目；来到不同的班级，认识不同的朋友。在这里，祝大家学习顺利，一定要记得彼此。记得常联系！"
   close-on-overlay-click
   class="example-headline"
 ></mdui-dialog>
@@ -28,20 +28,23 @@
   openButton.addEventListener("click", () => dialog.open = true);
 </script>
 
-<mdui-dialog
-  headline="For techers||写给老师们"
-  description="我们认识了很多老师，但最难忘的，是您。您是一粒种子，在我们的心中扎根，生长，最后长成一颗屹立不倒的大树。"
-  close-on-overlay-click
-  class="example-headline"
-></mdui-dialog>
+<mdui-dialog class="example-dialog">
+  六年啊，我们认识了很多老师，但让我们难忘的，是您。
+  您像一粒种子，在我们的心中扎根，生长，长出一颗屹立不倒的大树。
+
+
+  <mdui-button>Close</mdui-button>
+</mdui-dialog>
 
 <mdui-button>For teachers||给老师</mdui-button>
 
 <script>
-  const dialog = document.querySelector(".example-headline");
+  const dialog = document.querySelector(".example-dialog");
   const openButton = dialog.nextElementSibling;
+  const closeButton = dialog.querySelector("mdui-button");
 
   openButton.addEventListener("click", () => dialog.open = true);
+  closeButton.addEventListener("click", () => dialog.open = false);
 </script>
 
 
