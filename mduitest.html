@@ -9,18 +9,32 @@
 
     <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
-    <!-- 如果使用了组件的 icon 属性，还需要引入图标的 CSS 文件 -->
+    
 
-    <title>Hello, world!</title>
+    <title>Rongxuan2022's Website</title>
   </head>
   <body>
-    <mdui-button>我是一个按钮</mdui-button>
+   <h1 align="center">Rongxuan2022'Website</h1>
+   <h3 align="center">喜欢你新页面吗🤓😋🤔</h1>
+   
+<mdui-tabs value="tab-1" placement="top-start" class="example-placement">
+  <mdui-tab value="tab-1">站内页面</mdui-tab>
+  <mdui-tab value="tab-2">我喜欢的</mdui-tab>
+  <mdui-tab value="tab-3">友情链接</mdui-tab>
 
+  <mdui-tab-panel slot="panel" value="tab-1" style="height: 260px">还没写呢</mdui-tab-panel>
+  <mdui-tab-panel slot="panel" value="tab-2" style="height: 260px">还没写呢</mdui-tab-panel>
+  <mdui-tab-panel slot="panel" value="tab-3" style="height: 260px">还没写呢</mdui-tab-panel>
+</mdui-tabs>
 
-<mdui-card clickable style="width: 200px;height: 124px">我是一个能点的卡片</mdui-card>
-<mdui-collapse>
-  <mdui-collapse-item header="点击打开折叠内容">折叠内容</mdui-collapse-item>
-  <mdui-collapse-item header="second header">second content</mdui-collapse-item>
-</mdui-collapse>
+<script>
+  const select = document.querySelector(".example-change-placement");
+  const tabs = document.querySelector(".example-placement");
+
+  select.addEventListener("change", (event) => {
+    tabs.placement = event.target.value;
+  });
+</script>
+ 
   </body>
 </html>
