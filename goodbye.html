@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<html class="mdui-theme-dark">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+
+
+    <title>毕业赠言</title>
+<mdui-card style="width: 200px;height: 124px"><mdui-fab extended icon="">点击显示</mdui-fab></mdui-card>
+<script>
+  const dialog = document.querySelector(".example-overlay");
+  const openButton = dialog.nextElementSibling;
+
+  openButton.addEventListener("click", () => dialog.open = true);
+</script>
+<mdui-dialog
+  headline="送给大家"
+  description="六年的时光，如流水般流去。我们很快就要分离，来到不同的学校，认识新的同学、学习新的科目；来到不同的班级，认识不同的朋友。在这里，我祝大家学习顺利，一定要记得六（2）班，也要记得我。"
+  close-on-overlay-click
+  class="example-headline"
+></mdui-dialog>
