@@ -27,3 +27,10 @@
 
   openButton.addEventListener("click", () => dialog.open = true);
 </script>
+<mdui-snackbar closeable class="example-closeable">愿我们顶峰相见。</mdui-snackbar>
+<script>
+  const snackbar = document.querySelector(".example-closeable");
+  const openButton = snackbar.nextElementSibling;
+
+  openButton.addEventListener("click", () => snackbar.open = true);
+</script>
