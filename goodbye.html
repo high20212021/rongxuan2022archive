@@ -15,17 +15,7 @@
 <mdui-dialog
   headline="For Everyone "
   description="六年的时光，如流水般流去。我们很快就要分离，来到不同的学校，认识新的同学、学习新的科目；来到不同的班级，认识不同的朋友。在这里，我祝大家学习顺利，一定要记得六（2）班，也要记得我。           --Eduarte Mo"
-  close-on-overlay-click
-  class="example-headline"
-<mdui-button slot="action" variant="tonal">Easter Egg</mdui-button>
-
-<mdui-snackbar closeable class="example-closeable">愿我们顶峰相见。</mdui-snackbar>
-<script>
-  const snackbar = document.querySelector(".example-closeable");
-  const openButton = snackbar.nextElementSibling;
-
-  openButton.addEventListener("click", () => snackbar.open = true);
-</script>
+  
 ></mdui-dialog>
 
 <mdui-button>Click To Show</mdui-button>
@@ -35,4 +25,14 @@
   const openButton = dialog.nextElementSibling;
 
   openButton.addEventListener("click", () => dialog.open = true);
+<mdui-snackbar closeable class="example-closeable">GOOD LUCK FOR THE FUTURE!</mdui-snackbar>
+
+<mdui-button>Easter Egg</mdui-button>
+
+<script>
+  const snackbar = document.querySelector(".example-closeable");
+  const openButton = snackbar.nextElementSibling;
+
+  openButton.addEventListener("click", () => snackbar.open = true);
+</script>
 </script>
