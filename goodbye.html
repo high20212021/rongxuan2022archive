@@ -27,13 +27,21 @@
 
   openButton.addEventListener("click", () => dialog.open = true);
 </script>
-<mdui-snackbar closeable class="example-closeable">愿顶峰相见。</mdui-snackbar>
 
-<mdui-button>Easter Egg||彩蛋</mdui-button>
+<mdui-dialog
+  headline="For techers||写给老师们"
+  description="我们认识了很多老师，但最难忘的，是您。您是一粒种子，在我们的心中扎根，生长，最后长成一颗屹立不倒的大树。"
+  close-on-overlay-click
+  class="example-headline"
+></mdui-dialog>
+
+<mdui-button>Click To Show||点击显示</mdui-button>
 
 <script>
-  const snackbar = document.querySelector(".example-closeable");
-  const openButton = snackbar.nextElementSibling;
+  const dialog = document.querySelector(".example-headline");
+  const openButton = dialog.nextElementSibling;
 
-  openButton.addEventListener("click", () => snackbar.open = true);
+  openButton.addEventListener("click", () => dialog.open = true);
 </script>
+
+
