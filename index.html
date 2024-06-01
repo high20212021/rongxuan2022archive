@@ -56,7 +56,7 @@
 <mdui-card style="width: 250px;height: 124px">Hitokoto|一言
 <p id="hitokoto">
   <a href="#" id="hitokoto_text"><mdui-circular-progress></mdui-circular-progress></a>
-</p>
+</p> </br >
 <script>
   fetch('https://v1.hitokoto.cn')
     .then(response => response.json())
@@ -67,7 +67,13 @@
     })
     .catch(console.error)
 </script></mdui-card>
-<mdui-card style="width: 400px;height: 120px"><img src="https://count.himiku.com/get/@:rongxuan" alt=":name" /></mdui-card>
+<mdui-card style="width: 400px;height: 120px"><img src="https://count.himiku.com/get/@:rongxuan" alt=":name" /> 
+
+<p>---音乐---</p>
+<audio src="music.mp3" type="audio/mpeg" controls>
+<!--mdui很好的解决了audio标签把下面的内容吃掉的问题（-->
+
+</mdui-card>
 
 <mdui-tabs value="tab-1" placement="top-start" class="example-placement">
   <mdui-tab value="tab-1">🌐站内页面</mdui-tab>
@@ -139,9 +145,10 @@
  
 </script></mdui-card>
 <mdui-card style="width: 250px;height: 124px">
-<p>---音乐---</p>
-<audio src="music.mp3" type="audio/mpeg" controls>
-<!--mdui很好的解决了audio标签把下面的内容吃掉的问题（-->
+<p>-特别鸣谢-</p></br >
+<p>minqwq（灵感来源）</p></br >
+<p>-AMDISYES（灵感来源）</p></br >
+<p>-MoeICP-</p></br >
 </mdui-card>
  <h5 align="center">Rongxuan2022 2024</h5>
  <h5 align="center">Github Pages托管</h5>
