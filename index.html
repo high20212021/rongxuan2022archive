@@ -51,8 +51,12 @@
    <h3 align="center">喜报：有博客了<a href="http://rongxuan2022.wuaze.com">[点击跳转]</a></h3>
    <marquee><font color="white">。</marquee>
    
-<mdui-card style="width: 250px;height: 124px">Hitokoto|一言
-<p id="hitokoto">
+<div class="mdui-card">
+  <div class="mdui-card-media">
+    <img src="card.jpg"/>
+    <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title"><p id="hitokoto">
   <a href="#" id="hitokoto_text"><mdui-circular-progress></mdui-circular-progress></a>
 </p> </br >
 <script>
@@ -64,9 +68,14 @@
       hitokoto.innerText = data.hitokoto
     })
     .catch(console.error)
-</script></mdui-card>
-<mdui-card style="width: 400px;height: 120px"><img src="https://count.himiku.com/get/@:rongxuan" alt=":name" /> 
-
+</script></div>
+        <div class="mdui-card-primary-subtitle">一言</div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+</div>
 
 
 </mdui-card>
