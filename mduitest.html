@@ -15,6 +15,31 @@
   </head>
   <body>
    <h1 align="center">Rongxuan2022'Website</h1>
+
+<mdui-bottom-app-bar style="position: relative;">
+  
+  <mdui-button-icon icon="menu"></mdui-button-icon>
+
+<mdui-navigation-drawer close-on-overlay-click class="example-drawer">
+  
+</mdui-navigation-drawer>
+
+<mdui-button-icon icon="menu"></mdui-button-icon>
+
+
+<script>
+  const navigationDrawer = document.querySelector(".example-drawer");
+  const openButton = navigationDrawer.nextElementSibling;
+  const closeButton = navigationDrawer.querySelector("mdui-button");
+
+  openButton.addEventListener("click", () => navigationDrawer.open = true);
+  closeButton.addEventListener("click", () => navigationDrawer.open = false);
+</script>
+ 
+</mdui-bottom-app-bar>
+
+  
+
    <h3 align="center">测试奇怪东西的页面</h1>
    
 <mdui-card style="width: 450px;height: 250px">  <marquee behavior="alternate">爆！</marquee>
