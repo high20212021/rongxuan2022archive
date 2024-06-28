@@ -59,5 +59,20 @@
 <img  width=55% src="https://osekai.net/profiles/img/banner.svg?id=35389783" alt="profile">
 <script>
 
+
+
+
+<mdui-collapse>
+  <mdui-collapse-item header="            "><mdui-snackbar class="example-snackbar">(≧▽≦)</mdui-snackbar>
+
+<mdui-button variant="text">摸摸</mdui-button>
+
+<script>
+  const snackbar = document.querySelector(".example-snackbar");
+  const openButton = snackbar.nextElementSibling;
+
+  openButton.addEventListener("click", () => snackbar.open = true);
+</script></mdui-collapse-item>
+
  </body>
 </html>
